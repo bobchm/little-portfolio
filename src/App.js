@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from "@mui/material/Container";
+import BioHeader from "./components/bio-header/bio-header.component";
+import AppContainer from "./components/app-container/app-container.component";
+import "./App.css";
+import APP_DATA from "./app-manifest";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container className="App">
+            <BioHeader />
+            <AppContainer apps={APP_DATA} />
+        </Container>
+    );
 }
 
 export default App;
