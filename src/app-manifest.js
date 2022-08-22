@@ -21,7 +21,7 @@ const APP_DATA = [
         id: 4,
         name: "E-Commerce",
         imageURL: "/images/e-commerce.jpg",
-        link: "https://bobs-ecommerce.netlify.app/",
+        link: "https://bobs-ecommerce-project.netlify.app/",
     },
     {
         id: 5,
